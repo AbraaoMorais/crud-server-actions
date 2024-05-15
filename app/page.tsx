@@ -16,7 +16,7 @@ export default async function Home() {
         <AddForm />
         <ul className='flex flex-col gap-4 py-6'>
           {todos.map((todo: any) => (
-            <li className='w-full flex justify-between' key={todo.id}>
+            <li className='w-full flex justify-between text-black' key={todo.id}>
               {todo.text}
               <DeleteForm id={todo.id} todo={todo.text} />
             </li>
